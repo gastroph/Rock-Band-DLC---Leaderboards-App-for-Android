@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rock Band Info - Welcome</string>
+    <string name="app_name_preferences">Rock Band Info - Preferences</string>
+    <string name="app_name_dlc_search">Rock Band Info - DLC Catalog</string>
+    <string name="app_name_score_search">Rock Band Info - Scores</string>
+    <string name="dev_name">TJ Stofflet</string>
+    <string name="dev_email">tstofflet@gmail.com</string>
+    <string name="dev_phone">312-RCK-BAND</string>
+    <string name="dev_twitter">tjs3783</string>
+    <string name="version_info">Rock Band Info - v1.0 Alpha</string>
+</resources>

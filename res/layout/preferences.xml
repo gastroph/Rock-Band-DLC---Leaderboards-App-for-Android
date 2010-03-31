@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:stretchColumns="1">
+    <TableRow android:layout_width="fill_parent" android:gravity="center">
+    	<TextView
+    		android:text="About This App"
+    		android:gravity="center"
+    		android:padding="5px"/>
+    </TableRow>
+	<TableRow>
+		<TextView
+			android:text="Version Info:"
+			android:padding="5px"/>
+		<TextView
+			android:text="@string/version_info"
+			android:padding="5px"
+			android:gravity="right"/>
+	</TableRow>
+	<View
+		android:layout_height="2dip"
+		android:background="#FF909090"/>
+	<TableRow android:layout_width="fill_parent" android:gravity="center">
+    	<TextView
+    		android:text="About This Developer"
+    		android:gravity="center"
+    		android:textSize="5pt"
+    		android:padding="5px"/>
+    </TableRow>
+	<TableRow>
+		<TextView
+			android:text="Name:"
+			android:textSize="5pt"
+			android:padding="5px"/>
+		<TextView
+			android:text="@string/dev_name"
+			android:textSize="5pt"
+			android:padding="5px"
+			android:gravity="right"/>
+	</TableRow>
+	<TableRow>
+		<TextView
+			android:text="E-mail:"
+			android:textSize="5pt"
+			android:padding="5px"/>
+		<TextView
+			android:id="@+id/devEmail"
+			android:clickable="true"
+			android:text="@string/dev_email"
+			android:textSize="5pt"
+			android:textColor="#83F52C"
+			android:padding="5px"
+			android:gravity="right"/>
+	</TableRow>
+	<TableRow>
+		<TextView
+			android:text="Phone:"
+			android:textSize="5pt"
+			android:padding="5px"/>
+		<TextView
+			android:id="@+id/devPhone"
+			android:clickable="true"
+			android:text="@string/dev_phone"
+			android:textColor="#83F52C"
+			android:textSize="5pt"
+			android:padding="5px"
+			android:gravity="right"/>
+	</TableRow>
+	<TableRow>
+		<TextView
+			android:text="Twitter:"
+			android:textSize="5pt"
+			android:padding="5px"/>
+		<TextView
+			android:text="@string/dev_twitter"
+			android:textSize="5pt"
+			android:padding="5px"
+			android:gravity="right"/>
+	</TableRow>
+	<View
+		android:layout_height="2dip"
+		android:background="#FF909090"/>
+</TableLayout>

@@ -1,0 +1,8 @@
+# Ignore these eclipse files
+.classpath
+.project
+.settings
+# Ignore bin directories (probably created by misconfigured eclipse)
+bin
+gen
+
