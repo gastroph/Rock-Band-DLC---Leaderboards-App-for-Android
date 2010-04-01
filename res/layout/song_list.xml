@@ -7,23 +7,59 @@
 		android:id="@+id/song_icon"
 		android:layout_width="wrap_content"
 		android:layout_height="fill_parent"
-		android:layout_alignParentTop="true"
-		android:layout_alignParentBottom="true"
 		android:layout_marginRight="5px"
-		android:layout_centerInParent="true"
-		android:src="@drawable/ic_text_dot" />
+		android:src="@drawable/ic_text_dot" android:scaleType="center"/>
 	<TextView
-		android:id="@+id/artist_name"
+		android:id="@+id/artist_name_label"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_toRightOf="@id/song_icon"
 		android:layout_alignParentTop="true"
+		android:textSize="5pt"
 		android:text="Artist Name: " />
 	<TextView
-		android:id="@+id/song_name"
+		android:id="@+id/artist_name"
+		android:layout_marginLeft="10px"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/artist_name_label"
+		android:layout_alignParentTop="true"
+		android:textSize="5pt"
+		android:textStyle="italic"
+		android:ellipsize="marquee" />
+	<TextView
+		android:id="@+id/song_name_label"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_toRightOf="@id/song_icon"
-		android:layout_alignParentBottom="true"		
+		android:layout_below="@id/artist_name_label"
+		android:textSize="5pt"		
 		android:text="Song Name: " />
+	<TextView
+		android:id="@+id/song_name"
+		android:layout_marginLeft="10px"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/song_name_label"
+		android:layout_below="@id/artist_name"
+		android:textSize="5pt"
+		android:textStyle="italic"
+		android:ellipsize="marquee" />
+	<TextView
+		android:id="@+id/song_release_date_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/song_icon"
+		android:layout_below="@id/song_name_label"
+		android:textSize="5pt"
+		android:text="Release Date: " />
+	<TextView
+		android:id="@+id/song_release_date"
+		android:layout_marginLeft="2px"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_toRightOf="@id/song_release_date_label"
+		android:layout_below="@id/song_name"
+		android:textSize="5pt"
+		android:textStyle="italic" />
 </RelativeLayout>
