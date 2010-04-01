@@ -1,13 +1,13 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 	<item android:id="@+id/quit"
 		android:title="Exit"
-		android:icon="@android:drawable/ic_menu_close_clear_cancel"
+		android:icon="@android:drawable/ic_lock_power_off"
 		android:visible="true"
 		android:enabled="true"
 	/>
 	<item android:id="@+id/properties"
-		android:title="Properties"
-		android:icon="@android:drawable/ic_menu_preferences"
+		android:title="About"
+		android:icon="@android:drawable/ic_menu_help"
 		android:visible="true"
 		android:enabled="true"
 	/>
