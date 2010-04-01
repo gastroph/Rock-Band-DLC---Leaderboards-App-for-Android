@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/guitarlogo32x32"
+    <item android:drawable="@drawable/drumslogo32x32"
           android:state_selected="true" />
-    <item android:drawable="@drawable/guitarlogo_inactive32x32" />
+    <item android:drawable="@drawable/drumslogo_inactive32x32" />
 </selector>
