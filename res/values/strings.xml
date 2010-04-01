@@ -9,4 +9,19 @@
     <string name="dev_phone">312-RCK-BAND</string>
     <string name="dev_twitter">tjs3783</string>
     <string name="version_info">Rock Band Info - v0.4 Alpha</string>
+    <string name="player_prompt">Username/Band Name</string>
+    <string name="game_prompt">Choose a game:</string>
+    <string-array name="game_array">
+    	<item>Rock Band</item>
+    	<item>Rock Band 2</item>
+    	<item>The Beatles: Rock Band</item>
+    </string-array>
+    <string name="instrument_prompt">Choose an instrument:</string>
+    <string-array name="instrument_array">
+    	<item>Guitar</item>
+    	<item>Bass</item>
+    	<item>Drums</item>
+    	<item>Vocals</item>
+    	<item>Band</item>
+    </string-array>
 </resources>
