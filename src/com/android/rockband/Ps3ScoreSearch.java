@@ -19,19 +19,25 @@ public class Ps3ScoreSearch extends Activity {
 		
 		Spinner gameSpinner = (Spinner) findViewById(R.id.game_spinner);
 		Spinner instrumentSpinner = (Spinner) findViewById(R.id.instrument_spinner);
+		Spinner difficultySpinner = (Spinner) findViewById(R.id.difficulty_spinner);
 		
 		ArrayAdapter<CharSequence> gameSpinnerAdapter = ArrayAdapter.createFromResource(this, R.array.game_array, android.R.layout.simple_spinner_item);
 		ArrayAdapter<CharSequence> instrumentSpinnerAdapter = ArrayAdapter.createFromResource(this, R.array.instrument_array, android.R.layout.simple_spinner_item);
-		
+		ArrayAdapter<CharSequence> difficultySpinnerAdapter = ArrayAdapter.createFromResource(this, R.array.difficulty_array, android.R.layout.simple_spinner_item);
+
 		gameSpinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		instrumentSpinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+		difficultySpinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		
 		gameSpinner.setAdapter(gameSpinnerAdapter);
 		gameSpinner.setOnItemSelectedListener(new MyOnItemSelectedListener());
 		instrumentSpinner.setAdapter(instrumentSpinnerAdapter);
 		instrumentSpinner.setOnItemSelectedListener(new MyOnItemSelectedListener());
+		difficultySpinner.setAdapter(difficultySpinnerAdapter);
+		difficultySpinner.setOnItemSelectedListener(new MyOnItemSelectedListener());		
 		
 		final EditText name = (EditText) findViewById(R.id.playerName);
+	
 		name.setOnKeyListener(new OnKeyListener() {
 			public boolean onKey(View v, int keyCode, KeyEvent event) {
 				if((event.getAction() == KeyEvent.ACTION_DOWN) && (keyCode == KeyEvent.KEYCODE_ENTER)) {

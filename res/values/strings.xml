@@ -7,10 +7,10 @@
     <string name="dev_name">TJ Stofflet</string>
     <string name="dev_email">tstofflet@gmail.com</string>
     <string name="dev_phone">312-RCK-BAND</string>
-    <string name="dev_twitter">tjs3783</string>
-    <string name="version_info">Rock Band Info - v0.4 Alpha</string>
+    <string name="dev_twitter">\@tjs3783</string>
+    <string name="version_info">Rock Band Info - v0.6 Alpha</string>
     <string name="player_prompt">Username/Band Name</string>
-    <string name="game_prompt">Choose a game:</string>
+    <string name="game_prompt">Choose a game...</string>
     <string-array name="game_array">
     	<item>Rock Band</item>
     	<item>Rock Band 2</item>

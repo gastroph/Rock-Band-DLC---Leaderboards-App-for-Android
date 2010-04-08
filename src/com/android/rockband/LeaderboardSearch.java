@@ -35,7 +35,7 @@ public class LeaderboardSearch extends TabActivity {
 		tabHost.setCurrentTabByTag("ic_tab_wii");
 	}
 
-@Override
+	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
     	MenuInflater inflater = getMenuInflater();
     	inflater.inflate(R.menu.main_menu, menu);
