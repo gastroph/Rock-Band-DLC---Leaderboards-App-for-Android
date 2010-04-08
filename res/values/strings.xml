@@ -24,4 +24,11 @@
     	<item>Vocals</item>
     	<item>Band</item>
     </string-array>
+    <string name="difficulty_prompt">Choose a difficulty:</string>
+    <string-array name="difficulty_array">
+    	<item>Easy</item>
+    	<item>Medium</item>
+    	<item>Hard</item>
+    	<item>Expert</item>
+    </string-array>
 </resources>
