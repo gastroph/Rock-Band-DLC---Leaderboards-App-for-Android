@@ -3,7 +3,6 @@ package com.android.rockband;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -26,7 +25,7 @@ public class RB2DLCSearch extends ListActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setListAdapter(new ImageTextListAdapter(this, getSongList()));
+		//setListAdapter(new ImageTextListAdapter(this, getSongList()));
 		
 		ListView songListView = getListView();
 		songListView.setTextFilterEnabled(true);
@@ -38,22 +37,16 @@ public class RB2DLCSearch extends ListActivity {
 		HttpREST httpREST = new HttpREST();
 		String url = "http://services.rockband.com/leaderboard_data/rb2/wii/song_list.json";
 		String result = httpREST.getHMXSonglist(url);
-		JSONArray nameArray = new JSONArray();
-		JSONArray valueArray = new JSONArray();
-		JSONObject songList = new JSONObject();
+		ArrayList<JSONObject> songList = new ArrayList<JSONObject>();
 		if(result != null) {
 			try {
 				JSONObject jsonResult = new JSONObject(result);
-				nameArray = jsonResult.names();
-				valueArray = jsonResult.toJSONArray(nameArray);
+				songList.add(0, jsonResult);
 			} catch (JSONException je) {
 				Log.e("JSONERRORD", "Exception:[ "+je+"]");
 			}
 		}
-		ArrayList<JSONObject> sontList = new ArrayList<JSONObject>();
-		sontList.add(0, nameArray);
-		sontList.add(1, valueArray);
-		return null;
+		return songList;
 	}
 
 	
