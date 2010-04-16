@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+	<string name="version_info">Rock Band Info - v0.6 Alpha</string>
     <string name="app_name">Rock Band DLC &amp; Leaderboard Tracker</string>
     <string name="app_name_preferences">Rock Band Info - Preferences</string>
     <string name="app_name_dlc_search">Rock Band Info - DLC Catalog</string>
@@ -8,7 +9,12 @@
     <string name="dev_email">tstofflet@gmail.com</string>
     <string name="dev_phone">312-RCK-BAND</string>
     <string name="dev_twitter">tjs3783</string>
-    <string name="version_info">Rock Band Info - v0.4 Alpha</string>
+    <string name="dev_github">http://github.com/tjs3783/Rock-Band-DLC---Leaderboards-App-for-Android</string>
+    <string name="keldon_thanks">Thank you for helping me understand how you manage all of that data, and how you calculate all of the scores. Your site helped inspire this!</string>
+    <string name="rba_twitter">RockBandAide</string>
+    <string name="rb_dlc_twitter">RockBandDLC</string>
+    <string name="rbn_dlc_twitter">RBNDLC</string>
+    <string name="rba_thanks">Thank you for all the Rock Band news &amp; announcements you bring to the community, and thank you for letting me use your feeds for updates!</string>
     <string name="player_prompt">Username/Band Name</string>
     <string name="game_prompt">Choose a game:</string>
     <string-array name="game_array">
